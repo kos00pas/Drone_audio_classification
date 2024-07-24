@@ -10,7 +10,7 @@ def find_csv_files_and_record(directory, output_csv_file):
         # Write headers for the CSV file
         csv_writer.writerow(['Directory', 'Label'])
 
-        # Walk through all directories and files in the specified directory
+        # Walk through all.txt directories and files in the specified directory
         for root, dirs, files in os.walk(directory):
             # Check if 'mfcc.csv' is one of the files in the directory
             if 'mfcc.csv' in files:

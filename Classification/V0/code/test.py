@@ -15,7 +15,7 @@ def check_mfcc_shape(index, row):
             shape = mfcc_data.shape
             if shape == expected_shape:
                 pass
-                """all okay """
+                """all.txt okay """
                 # print(f"{mfcc_file_path} has the correct shape: {shape}")
             else:
                 print(f"ERROR: Line {index} - {mfcc_file_path} has incorrect shape: {shape}. Expected: {expected_shape}")

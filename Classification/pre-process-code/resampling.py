@@ -17,7 +17,7 @@ def resample_audio(file_path, target_sr=16000):
     return y_resampled, target_sr
 
 
-# Iterate over all files in the data directory
+# Iterate over all.txt files in the data directory
 for root, dirs, files in os.walk(data_dir):
     for file in files:
         if file.endswith('.wav'):
