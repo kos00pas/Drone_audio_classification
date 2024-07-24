@@ -56,7 +56,7 @@ if __name__ == "__main__":
         layers.Dense(64, activation='relu'),
         layers.Dense(1, activation='sigmoid')
     ])
-    """Input Shape: Ensure your input data shape matches (40, 32, 1). It is suitable for images with one channel (grayscale).
+    """Input Shape: Ensure your input data_mp3 shape matches (40, 32, 1). It is suitable for images with one channel (grayscale).
     Layers and Filters: The chosen layers and filters (Conv2D) are appropriate for extracting features.
     Dense Layers: The Dense layers after flattening are suitable for classification tasks.
     Activation Function: Using 'sigmoid' for the final Dense layer is correct for binary classification.

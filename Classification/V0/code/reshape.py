@@ -5,7 +5,7 @@ def extract_paths_and_process(file_path):
         csv_reader = csv.reader(file)
         next(csv_reader)  # Skip header row if there is one
         for row in csv_reader:
-            modified_folder = row[0]  # Modify the folder data
+            modified_folder = row[0]  # Modify the folder data_mp3
             shape_str = row[1].strip('()')
             if shape_str:  # Check if shape_str is not empty
                 try:
@@ -33,10 +33,10 @@ def padd(path):
             data_shape = (num_rows, num_cols)
             print("Shape of data_exist:", data_shape)
 
-            # Initialize the output data with the existing data
+            # Initialize the output data_mp3 with the existing data_mp3
             output_data = data_exist.copy()
 
-            # Pad the data until it reaches the target shape of 16000 rows
+            # Pad the data_mp3 until it reaches the target shape of 16000 rows
             while len(output_data) < target_shape:
                 remaining_rows = target_shape - len(output_data)
                 output_data.extend(data_exist[:remaining_rows])
@@ -46,7 +46,7 @@ def padd(path):
 
             print("Padded Data Shape:", (len(output_data), num_cols),path)
 
-        # Write the padded data back to the file
+        # Write the padded data_mp3 back to the file
         with open(path, mode='w', newline='') as file:
             csv_writer = csv.writer(file)
             csv_writer.writerow(['Column1', 'Column2'])  # Write header row if needed

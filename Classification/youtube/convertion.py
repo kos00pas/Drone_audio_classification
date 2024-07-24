@@ -2,7 +2,7 @@ import os
 from pydub import AudioSegment
 
 
-def convert_all_mp3_to_wav(input_folder_path, output_folder_name="converted"):
+def convert_all_mp3_to_wav(input_folder_path, output_folder_name="converted_war"):
     # Create the output folder if it does not exist
     output_folder_path = os.path.join(input_folder_path, output_folder_name)
     if not os.path.exists(output_folder_path):
@@ -22,4 +22,4 @@ def convert_all_mp3_to_wav(input_folder_path, output_folder_name="converted"):
 
 
 # Example usage
-convert_all_mp3_to_wav("data")
+convert_all_mp3_to_wav("data_mp3")

@@ -35,7 +35,7 @@ def check_mfcc_shape(file_path):
         print(f"ERROR: Could not read {file_path}. Exception: {e}")
         return False, None
 
-# Initialize lists to hold valid MFCC data and labels
+# Initialize lists to hold valid MFCC data_mp3 and labels
 valid_mfcc_data = []
 valid_labels = []
 
@@ -55,7 +55,7 @@ valid_labels = np.array(valid_labels)
 # Print the total number of valid samples
 print(f"Total valid samples: {len(valid_mfcc_data)}")
 
-# Create a TensorFlow dataset from the valid MFCC data and labels
+# Create a TensorFlow dataset from the valid MFCC data_mp3 and labels
 mfcc_dataset = tf.data.Dataset.from_tensor_slices(valid_mfcc_data)
 labels_dataset = tf.data.Dataset.from_tensor_slices(valid_labels)
 dataset = tf.data.Dataset.zip((mfcc_dataset, labels_dataset))

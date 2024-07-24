@@ -34,7 +34,7 @@ def create_and_plot_mfcc(signal, sr):
     plt.show()
 
 
-# Load the signal data
+# Load the signal data_mp3
 signal_data = pd.read_csv('signal.csv', header=None).values.flatten()
 
 # Create and plot MFCC

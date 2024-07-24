@@ -49,7 +49,7 @@ for directory in sorted(directories_with_csv):
     # Add paths to the second CSV lists
     mfcc_paths.append(mfcc_path if mfcc_path else '')
 
-    # Read the [0][0] data from the label.csv
+    # Read the [0][0] data_mp3 from the label.csv
     if label_path and os.path.exists(label_path):
         with open(label_path, 'r') as f:
             first_line = f.readline().strip()
