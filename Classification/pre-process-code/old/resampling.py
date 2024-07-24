@@ -3,7 +3,7 @@ import librosa
 import soundfile as sf
 
 # Define the directories
-data_dir = './converted_war'
+data_dir = './data'
 resampled_dir = './resampled_data'
 
 # Create the resampled directory if it doesn't exist

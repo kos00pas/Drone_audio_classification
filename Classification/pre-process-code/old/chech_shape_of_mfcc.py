@@ -12,7 +12,7 @@ def print_mfcc_shapes(root_dir):
             if file == 'mfcc.csv':
                 file_path = os.path.join(subdir, file)
                 mfcc_data = pd.read_csv(file_path)
-                if mfcc_data.shape != (39, 32):
+                if mfcc_data.shape != (40, 32):
                     print(f'Shape of {file_path}: {mfcc_data.shape}')
 
 # Set the root directory

@@ -5,7 +5,7 @@ order :
 
 * resampling.py :   convert them to sample rate -> 16kHz
 * splitting.py :Split them in 1sec duration
-    - create_singal_csv.py : create a directory for each 1 sec  to contain :
+* create_singal_csv.py : create a directory for each 1 sec  to contain :
         1. signal.csv (16000,1) ,dtype=np.int16 based on recording of respeaker dtype:float32
         2. audio.wav sr=16kHz , what script:
         - in the future

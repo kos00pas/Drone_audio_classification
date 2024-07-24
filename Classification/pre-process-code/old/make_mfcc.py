@@ -5,6 +5,9 @@ import librosa
 import librosa.display
 import matplotlib.pyplot as plt
 
+
+
+
 def make_mfcc(file_path, save_path):
     """
     Scope:
@@ -34,16 +37,21 @@ def make_mfcc(file_path, save_path):
 
     print(f"Done MFCC for {file_path}")
 
-    # Save MFCC to CSV without header
+    # Save MFCC to CSV
     mfcc_df = pd.DataFrame(mfcc)
-    mfcc_df.to_csv(save_path, index=False, header=False)
+    mfcc_df.to_csv(save_path, index=False)
 
-    # Alternative method to remove the first row if needed
-    # mfcc_df.to_csv(save_path, index=False)
-    # # Remove the first row
-    # df = pd.read_csv(save_path)
-    # df = df.iloc[1:]
-    # df.to_csv(save_path, index=False, header=False)
+    #
+    # # Plot the MFCC
+    # plt.figure(figsize=(10, 4))
+    # librosa.display.specshow(mfcc, x_axis='time', sr=sr, hop_length=hop_length)
+    # plt.colorbar(format='%+2.0f dB')
+    # plt.title('MFCC')
+    # plt.ylabel('MFCC Coefficients')
+    # plt.xlabel('Time')
+    # plt.tight_layout()
+    # plt.show()
+
 
 def process_directories(root_dir):
     """
@@ -56,6 +64,7 @@ def process_directories(root_dir):
                 file_path = os.path.join(subdir, file)
                 save_path = os.path.join(subdir, 'mfcc.csv')
                 make_mfcc(file_path, save_path)
+
 
 # Set the root directory
 all_data = './all_data'

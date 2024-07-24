@@ -7,7 +7,6 @@ import shutil
 splitted_dir = './splitted_dir'
 all_data = './all_data'
 
-
 # Function to create directories and save first channel signal data to signal.csv
 def create_directories_and_save_signal(src_root, dest_root):
     for root, dirs, files in os.walk(src_root):
@@ -48,25 +47,6 @@ def create_directories_and_save_signal(src_root, dest_root):
                     signal_csv_path = os.path.join(dest_dir_path, 'signal.csv')
                     np.savetxt(signal_csv_path, c0, delimiter=',', fmt='%d')
                     print(f'Created signal.csv at {signal_csv_path}')
-
-                    # Check if signal.csv is full of zeros
-                    if np.all(c0 == 0):
-                        print(f'signal.csv is full of zeros for {src_file_path}')
-                        shutil.rmtree(dest_dir_path)
-                        print(f'Deleted directory {dest_dir_path}')
-                        continue
-
-                    # Check if the data can cause a RuntimeWarning or error in other code
-                    try:
-                        audio_data = c0.astype(np.float32)
-                        audio_data /= np.max(np.abs(audio_data))
-                        if not np.isfinite(audio_data).all():
-                            raise ValueError("Audio buffer is not finite everywhere")
-                    except Exception as e:
-                        print(f'Error encountered with {src_file_path}: {e}')
-                        shutil.rmtree(dest_dir_path)
-                        print(f'Deleted directory {dest_dir_path}')
-
 
 # Call the function
 create_directories_and_save_signal(splitted_dir, all_data)
