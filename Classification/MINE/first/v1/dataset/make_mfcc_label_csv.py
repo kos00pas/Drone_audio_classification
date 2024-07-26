@@ -45,7 +45,7 @@ def process_directories(base_path, output_file):
                     shutil.rmtree(root)
                     print(f"Folder deleted: {root}")
 
-base_path = '../../../Classification/FINISHED_V6'
+base_path = '../../../../FINISHED_V6'
 output_file = 'mfccs_labels.csv'
 print("start")
 process_directories(base_path, output_file)
