@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.12 (AudioClassification)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="doa_class" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="doa_env" project-jdk-type="Python SDK" />
 </project>
