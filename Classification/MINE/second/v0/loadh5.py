@@ -89,7 +89,7 @@ if __name__ == "__main__":
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
     # Define the model name dynamically using the timestamp
-    model_name = f'trained_model_{timestamp}.keras'
+    model_name = f'trained_model_loadh5_{timestamp}.keras'
 
     # Save the model in Keras format
     model.save(model_name)

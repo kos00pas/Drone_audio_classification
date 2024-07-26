@@ -1,0 +1,9 @@
+For further improvement is desired,  tuning the following:
+
+Learning rate
+Batch size
+Number of epochs
+
+make a script to run and test various compinations of the above in order to select the best in the end
+* for every running i want to :
+save the model with name trained_model_LR_#_BS_#_Ep_#.keras  with # the valious and print the terminal output in the trained_model_LR_#_BS_#_Ep_#.txt

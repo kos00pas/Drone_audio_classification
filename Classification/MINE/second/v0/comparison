@@ -1,0 +1,47 @@
+Comparison
+Training Accuracy and Loss:
+-------------------------------------
+
+->Training
+
+First Model (load_train_model.py):
+Final Training Accuracy: 95.30%
+Final Training Loss: 0.1248
+
+Second Model (loadh5.py):
+Final Training Accuracy: 97.00%
+Final Training Loss: 0.0716
+Validation Accuracy and Loss:
+-------------------------------------
+
+->Validation
+
+First Model (load_train_model.py):
+Final Validation Accuracy: 0%
+Final Validation Loss: 0.7672
+
+Second Model (loadh5.py):
+Final Validation Accuracy: 95.56%
+Final Validation Loss: 0.1485
+Test Accuracy and Loss:
+-------------------------------------
+
+->Test
+
+First Model (load_train_model.py):
+Test Accuracy: 37.97%
+Test Loss: 0.6901
+
+Second Model (loadh5.py):
+Test Accuracy: 95.56%
+Test Loss: 0.1346
+
+-------------------------------------
+-------------------------------------
+
+Conclusion
+Overall Performance:
+The second model (loadh5.py) significantly outperforms the first model (load_train_model.py) in terms of both validation and test accuracy and loss.
+Generalization: The second model generalizes well to unseen data, as indicated by its high validation and test accuracies.
+In contrast, the first model has severe overfitting issues or possible validation data handling problems, given its 0% validation accuracy.
+The second model(loadh5) is the better choice based on these results. ​
