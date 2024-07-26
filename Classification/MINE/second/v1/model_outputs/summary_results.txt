@@ -25,3 +25,51 @@ LR: 1e-05, BS: 64, Ep: 30, Val Acc: 0.9980, Val Loss: 0.0206, Test Acc: 0.6272, 
 LR: 1e-05, BS: 128, Ep: 10, Val Acc: 0.9975, Val Loss: 0.0236, Test Acc: 0.6277, Test Loss: 1.6259
 LR: 1e-05, BS: 128, Ep: 20, Val Acc: 0.9990, Val Loss: 0.0200, Test Acc: 0.6257, Test Loss: 1.7452
 LR: 1e-05, BS: 128, Ep: 30, Val Acc: 0.9971, Val Loss: 0.0168, Test Acc: 0.6302, Test Loss: 1.9414
+
+
+
+
+To determine the best combination of hyperparameters, you should consider both validation and test metrics. Ideally, you want a model that performs well on the validation set and generalizes well to the test set.
+
+Criteria:
+High validation accuracy (Val Acc).
+Low validation loss (Val Loss).
+High test accuracy (Test Acc).
+Low test loss (Test Loss).
+Analysis:
+Let's examine the combinations based on these criteria:
+
+LR: 1e-05, BS: 64, Ep: 10
+
+Val Acc: 0.9946
+Val Loss: 0.0265
+Test Acc: 0.6552
+Test Loss: 1.4081
+LR: 1e-05, BS: 32, Ep: 10
+
+Val Acc: 0.9961
+Val Loss: 0.0319
+Test Acc: 0.6454
+Test Loss: 1.3622
+LR: 0.0001, BS: 128, Ep: 10
+
+Val Acc: 0.9744
+Val Loss: 0.0680
+Test Acc: 0.6361
+Test Loss: 1.5800
+LR: 1e-05, BS: 128, Ep: 10
+
+Val Acc: 0.9975
+Val Loss: 0.0236
+Test Acc: 0.6277
+Test Loss: 1.6259
+Conclusion:
+The best combination based on the provided data seems to be:
+
+LR: 1e-05, BS: 64, Ep: 10
+
+Val Acc: 0.9946
+Val Loss: 0.0265
+Test Acc: 0.6552
+Test Loss: 1.4081
+This combination provides a good balance of high validation accuracy, low validation loss, and the highest test accuracy with a relatively low test loss.
