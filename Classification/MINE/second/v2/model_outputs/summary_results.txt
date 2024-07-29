@@ -1,0 +1,59 @@
+LR: 0.001, BS: 32, Ep: 10, Val Acc: 0.9926, Val Loss: 0.0369, Test Acc: 0.6297, Test Loss: 3.7010
+LR: 0.001, BS: 32, Ep: 20, Val Acc: 0.9774, Val Loss: 0.0743, Test Acc: 0.6252, Test Loss: 3.0397
+LR: 0.001, BS: 32, Ep: 30, Val Acc: 0.9794, Val Loss: 0.1173, Test Acc: 0.6356, Test Loss: 6.9195
+LR: 0.001, BS: 64, Ep: 10, Val Acc: 0.9971, Val Loss: 0.0184, Test Acc: 0.6248, Test Loss: 3.2025
+LR: 0.001, BS: 64, Ep: 20, Val Acc: 0.9759, Val Loss: 0.1430, Test Acc: 0.6665, Test Loss: 4.0931
+LR: 0.001, BS: 64, Ep: 30, Val Acc: 0.9848, Val Loss: 0.0670, Test Acc: 0.6331, Test Loss: 5.2005
+LR: 0.001, BS: 128, Ep: 10, Val Acc: 0.9897, Val Loss: 0.0472, Test Acc: 0.6356, Test Loss: 2.5278
+LR: 0.001, BS: 128, Ep: 20, Val Acc: 0.9921, Val Loss: 0.0394, Test Acc: 0.6331, Test Loss: 4.2117
+LR: 0.001, BS: 128, Ep: 30, Val Acc: 0.9715, Val Loss: 0.1292, Test Acc: 0.6469, Test Loss: 5.3979
+LR: 0.0001, BS: 32, Ep: 10, Val Acc: 0.9872, Val Loss: 0.0505, Test Acc: 0.6321, Test Loss: 1.9739
+LR: 0.0001, BS: 32, Ep: 20, Val Acc: 0.9882, Val Loss: 0.0365, Test Acc: 0.6375, Test Loss: 2.8671
+LR: 0.0001, BS: 32, Ep: 30, Val Acc: 0.9907, Val Loss: 0.0417, Test Acc: 0.6306, Test Loss: 4.3826
+LR: 0.0001, BS: 64, Ep: 10, Val Acc: 0.9951, Val Loss: 0.0198, Test Acc: 0.6292, Test Loss: 2.4862
+LR: 0.0001, BS: 64, Ep: 20, Val Acc: 0.9789, Val Loss: 0.0614, Test Acc: 0.6390, Test Loss: 2.7910
+LR: 0.0001, BS: 64, Ep: 30, Val Acc: 0.9828, Val Loss: 0.0699, Test Acc: 0.6292, Test Loss: 4.0961
+LR: 0.0001, BS: 128, Ep: 10, Val Acc: 0.9946, Val Loss: 0.0244, Test Acc: 0.6238, Test Loss: 2.5839
+LR: 0.0001, BS: 128, Ep: 20, Val Acc: 0.9853, Val Loss: 0.0425, Test Acc: 0.6370, Test Loss: 3.0255
+LR: 0.0001, BS: 128, Ep: 30, Val Acc: 0.9897, Val Loss: 0.0268, Test Acc: 0.6311, Test Loss: 4.4528
+LR: 1e-05, BS: 32, Ep: 10, Val Acc: 0.9961, Val Loss: 0.0277, Test Acc: 0.6287, Test Loss: 1.4017
+LR: 1e-05, BS: 32, Ep: 20, Val Acc: 0.9975, Val Loss: 0.0190, Test Acc: 0.6306, Test Loss: 1.7543
+LR: 1e-05, BS: 32, Ep: 30, Val Acc: 0.9971, Val Loss: 0.0182, Test Acc: 0.6282, Test Loss: 2.1591
+LR: 1e-05, BS: 64, Ep: 10, Val Acc: 0.9995, Val Loss: 0.0302, Test Acc: 0.6302, Test Loss: 1.3253
+LR: 1e-05, BS: 64, Ep: 20, Val Acc: 0.9961, Val Loss: 0.0263, Test Acc: 0.6267, Test Loss: 1.7065
+LR: 1e-05, BS: 64, Ep: 30, Val Acc: 0.9956, Val Loss: 0.0178, Test Acc: 0.6277, Test Loss: 2.2364
+LR: 1e-05, BS: 128, Ep: 10, Val Acc: 0.9985, Val Loss: 0.0239, Test Acc: 0.6277, Test Loss: 1.4721
+LR: 1e-05, BS: 128, Ep: 20, Val Acc: 0.9956, Val Loss: 0.0212, Test Acc: 0.6292, Test Loss: 1.8288
+LR: 1e-05, BS: 128, Ep: 30, Val Acc: 0.9961, Val Loss: 0.0204, Test Acc: 0.6257, Test Loss: 2.0814
+
+To determine the best combination of hyperparameters from the new results, let's re-evaluate based on the criteria: high validation accuracy, low validation loss, high test accuracy, and low test loss.
+
+Best Results Based on Updated Data:
+LR: 1e-05, BS: 64, Ep: 10
+
+Val Acc: 0.9995
+Val Loss: 0.0302
+Test Acc: 0.6302
+Test Loss: 1.3253
+LR: 1e-05, BS: 32, Ep: 10
+
+Val Acc: 0.9961
+Val Loss: 0.0277
+Test Acc: 0.6287
+Test Loss: 1.4017
+LR: 1e-05, BS: 128, Ep: 10
+
+Val Acc: 0.9985
+Val Loss: 0.0239
+Test Acc: 0.6277
+Test Loss: 1.4721
+Conclusion:
+The best combination based on the updated results is:
+
+LR: 1e-05, BS: 64, Ep: 10
+
+Val Acc: 0.9995
+Val Loss: 0.0302
+Test Acc: 0.6302
+Test Loss: 1.3253
+This combination has the highest validation accuracy, a very low validation loss, a good test accuracy, and the lowest test loss among the combinations.
